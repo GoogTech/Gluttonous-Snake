@@ -1,0 +1,8 @@
+reference from:  https://github.com/52JimXu/Snake
+
+Play the music:
+	First Method.
+	https://www.jb51.net/article/142681.htm
+	
+	Second method.
+	https://blog.csdn.net/Giving_bestself/article/details/51843239

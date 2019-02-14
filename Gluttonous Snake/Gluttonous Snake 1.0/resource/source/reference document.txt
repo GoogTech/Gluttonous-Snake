@@ -1,0 +1,8 @@
+Java插入音频文件，播放音乐
+
+方法一（已测试可行）
+https://www.jb51.net/article/142681.htm
+
+方法二（线程问题有点不太明白）
+https://blog.csdn.net/Giving_bestself/article/details/51843239
+
