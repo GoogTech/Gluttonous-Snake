@@ -4,9 +4,9 @@ import java.awt.Color;
 import java.awt.Font;
 import java.awt.Graphics;
 import java.awt.Image;
-import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
 
+import constant.Constant;
 import core.Food;
 import core.MyFrame;
 import core.MySnack;
@@ -31,26 +31,35 @@ public class SnakeClient extends MyFrame
 	Image background = ImageUtil.images.get("UI-background");
 	Image fail = ImageUtil.images.get("game-scene-01");
 
+	
+//	@Override
+//	public void loadFrame()
+//	{
+//		super.loadFrame();
+//		// Mouse clicked.
+//		this.addKeyListener(new KeyAdapter()
+//		{
+//			@Override
+//			public void keyPressed(KeyEvent e)
+//			{
+//				super.keyPressed(e);
+//				mySnack.keyPressed(e);
+//			}
+//		});
+//	}
+
 	/*
-	 * (non-Javadoc)
+	 * Listen for the event.
 	 * 
-	 * @see score.MyFrame#loadFrame()
+	 * @see core.MyFrame#keyPressed(java.awt.event.KeyEvent)
 	 */
 	@Override
-	public void loadFrame()
+	public void keyPressed(KeyEvent e)
 	{
-		super.loadFrame();
-		// Mouse clicked.
-		addKeyListener(new KeyAdapter()
-		{
-			@Override
-			public void keyPressed(KeyEvent e)
-			{
-				super.keyPressed(e);
-				mySnack.keyPressed(e);
-			}
-		});
+		super.keyPressed(e);
+		mySnack.keyPressed(e);
 	}
+	
 
 	/*
 	 * Draw the game.
@@ -61,7 +70,7 @@ public class SnakeClient extends MyFrame
 	public void paint(Graphics g)
 	{
 		super.paint(g);
-		g.drawImage(background, 0, 0, null); //BUG !!!
+		g.drawImage(background, 0, 0, null); 
 
 		// Determine the state of the game.
 		if (mySnack.live)
@@ -94,24 +103,23 @@ public class SnakeClient extends MyFrame
 	{
 		g.setFont(new Font(Font.SANS_SERIF, Font.BOLD, 30));
 		g.setColor(Color.MAGENTA);
-		g.drawString("SCORE : "+mySnack.score, 40, 80);
+		g.drawString("SCORE : " + mySnack.score, 20, 40);
 	}
 
 	/**
 	 * @Title Main
-	 * @Description TODO
-	 * @param
+	 * @Description Test the project.
 	 * @return void
 	 * @date Feb 11, 2019-3:40:11 PM
 	 *
 	 */
 	public static void main(String[] args)
 	{
-		//Play the game.
+		// Play the game.
 		new SnakeClient().loadFrame();
-		
-		//Play the background music.
-		MusicPlayer.getMusicPlay("resource\\music\\Happy birthday.mp3");
-		
+
+		// Play the background music.
+		MusicPlayer.getMusicPlay(Constant.MUSIC_PRE + "Happy birthday.mp3");
+
 	}
 }

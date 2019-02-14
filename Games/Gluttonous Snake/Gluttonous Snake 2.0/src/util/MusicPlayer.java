@@ -28,7 +28,6 @@ public class MusicPlayer extends Thread
 	/**
 	 * @Title Music
 	 * @Description Thread: play the music.
-	 * @param 
 	 * @return void
 	 * @date Feb 11, 2019-5:20:47 PM
 	 *

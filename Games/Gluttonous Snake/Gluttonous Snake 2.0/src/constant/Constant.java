@@ -12,9 +12,12 @@ package constant;
 public class Constant
 {
 	//THE SIZE OF FRAME.
-	public static final int GAME_WIDTH = 954;
-	public static final int GAME_HEIGHT = 594;
+	public static final int GAME_WIDTH = 870;
+	public static final int GAME_HEIGHT = 560;
 	
 	//THE PREFIX PATH OF IMAGE.
 	public static final String IMG_PRE = "image/";
+	
+	//THE PREFIX PATH OF MUSIC.
+	public static final String MUSIC_PRE = "resource/music/";
 }
