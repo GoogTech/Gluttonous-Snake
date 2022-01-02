@@ -1,13 +1,15 @@
 ## :grapes: :snake: :watermelon: 水果贪吃蛇小游戏
+> 为庆祝同学过生日而写的.
+
 
 ### 功能介绍
-- *:100:计分制*
-- *:cherries:水果随机*
-- *:musical_note:背景音乐*
+- *百计分制*
+- *水果随机*
+- *背景音乐*
 
 
 ### 游戏截屏
-![a](https://raw.githubusercontent.com/YUbuntu0109/Gluttonous-Snake/master/Gluttonous%20Snake%202.0/Demonstration/Gluttonous%20Snack%202.1.PNG)
+<img width="643" alt="Gluttonous Snack 2 1" src="https://user-images.githubusercontent.com/43493852/147869102-73969c58-c720-40f1-808a-ce35dda35b9c.PNG">
 
 
 ### 项目结构
@@ -146,11 +148,3 @@
                 MusicPlayer.java
                 package-info.java
 ```
-
-
-
-*:books:更多有趣游戏及项目请前往我的个人博客哟（づ￣3￣）づ╭❤～ : https://yubuntu0109.github.io/* 
- 
-:coffee: Look forward to your contribution !
-
-:man_student: If you need any help, please contact me ~ QQ : 3083968068
